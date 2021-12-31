@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 @keyframes colorchange{
-    from {background-color: slateblue;}
-    to {background-color: skyblue;}
+    from {background-color: skyblue;}
+    to {background-color: black;}
 }
 
 body{
@@ -13,7 +13,7 @@ body{
 }
 header{
     padding: 20px 35px;
-    background-color: slateblue;
+    background-color: skyblue;
     animation-name: colorchange;
     animation-duration: 5s;
 }
@@ -42,4 +42,16 @@ header nav ul li{
 header nav ul li a{
     color:cyan;
     font-size: 20px;
+}
+.subtitle{
+    width: 100%;
+    background-image: conic-gradient(skyblue, black);
+}
+.subtitle div h2{
+    color: white;
+    font-size: 20px;
+    float: right;
+}
+section{
+    padding: 70px;
 }
