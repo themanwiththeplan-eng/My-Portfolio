@@ -55,3 +55,48 @@ header nav ul li a{
 section{
     padding: 70px;
 }
+.contact{
+    background-image: conic-gradient(skyblue, black);
+}
+.contact div u{
+    color: white;
+    padding: 5px 0;
+}
+.contact div u h1{
+    text-align: center;
+    color: white;
+}
+footer{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.wow{
+    font-size: 22px;
+    color:white;
+}
+.about-me{
+    background-color: skyblue;
+    width: 100%;
+    
+    
+}
+
+.about-me div h1{
+    float: left;
+    flex-wrap: wrap;
+    padding-right: 200px;
+}
+.about{
+    float: right;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+.about-me img{
+    display:flex;
+    margin: auto;
+}
+/* staged media query for future use */
+@media screen and (max-width: 768px){
+    
+}
