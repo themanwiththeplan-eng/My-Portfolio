@@ -17,12 +17,16 @@ header{
     background-color: skyblue;
     animation-name: colorchange;
     animation-duration: 5s;
+    height: 375px;
 }
 header h1{
     font-weight: bold;
-    display:inline;
+    display:flex;
     font-size:30px;
     margin: 7px 10px;
+}
+header div{
+   position: absolute;
 }
 header h1 u a{
     color:cyan;
@@ -32,13 +36,19 @@ header a{
 }
 header nav{
     float: right;
-    margin: 8px 0;
+    display: flex;
+    position: relative;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+
 }
 header nav ul li{
-    display: inline-flex;
     justify-content: space-evenly;
-    padding: 0 10px;
-
+    padding: 0 20px;
 }
 header nav ul li a{
     color:cyan;
@@ -88,14 +98,11 @@ footer{
     padding-right: 200px;
 }
 .about{
-    float: right;
-    flex-wrap: wrap;
+    display: flex;
     font-size: 17px;
-}
-.about-me img{
-    display:flex;
-    margin: auto;
-    height: 200px;
+    text-align: center;
+    justify-content: center;
+    padding-right: 100px;
 }
 .hero{
     height: 600px;
@@ -105,12 +112,15 @@ footer{
 .hero div{
     display: flex;
     padding: 0 20px;
+    justify-content: center;
     
 }
 .hero h1{
-    float: left;
+    display:inline;
     font-size: 25px;
     padding-right: 200px;
+    position:relative;
+    top: 240px;
 }
 .hero div h2{
     display: flex;
@@ -123,15 +133,31 @@ footer{
 }
 .surf-report{
     flex-direction: column;
+    background-color: blue;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
 }
 .led-wall{
     flex-direction: column;
+    background-color: blue;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
 }
 .calculator{
     flex-direction:column;
+    background-color: blue;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
 }
 .pastel{
     flex-direction:column;
+    background-color: blue;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
 }
 .run-buddy{
     flex-direction:column;
@@ -144,9 +170,22 @@ footer{
     font-size: 22px;
     text-align:center;
 }
+.surf-report:hover{
+    opacity: .65;
+}
+.led-wall:hover{
+    opacity: .65;
+}
+.calculator:hover{
+    opacity: .65;
+}
+.pastel:hover{
+    opacity: .65;
+}
+.run-buddy:hover{
+    opacity: .65;
+}
 /* staged media query for future use */
-@media screen and (max-width: 768px){
-    .hero{
-        background-color: yellow;
-    }
+@media screen and (min-width: 768px){
+    
 }
