@@ -186,6 +186,6 @@ footer{
     opacity: .65;
 }
 /* staged media query for future use */
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     
 }
