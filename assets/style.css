@@ -187,5 +187,28 @@ footer{
 }
 /* staged media query for future use */
 @media screen and (max-width: 768px){
-    
+    .hero div{
+        flex-direction: column;
+        width: 300px;
+        height: 200px;
+    }
+    .hero h1{
+        right: 90px;
+    }
+    .wow{
+        font-size:15px;
+        
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align:center;
+    }
+    .center{
+        position: relative;
+        left: 70px;
+    }
+    .about{
+        text-align: center;
+    }
 }
